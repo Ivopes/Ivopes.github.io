@@ -121,15 +121,11 @@ span.psw {
 
 <script>
 
-function ahoj(){
-    alert("aaa");
-}
-function submit(){
+function redire(){
     alert("odeslane");
     window.location.replace("redir.html?code=123456789");
     return false;
 }
-
 </script>
     
 </head>
@@ -141,7 +137,7 @@ function submit(){
 
 <div id="id01" class="modal">
   
-  <form class="modal-content" method="get" onsubmit="return submit()">
+  <form class="modal-content" method="get" onsubmit="ubmit()">
 
 
     <div class="container">
@@ -154,6 +150,7 @@ function submit(){
       <button type="submit">Login</button>
     </div> 
   </form>
+  <button onclick="redire()">click</button>
 </div>
 
 
