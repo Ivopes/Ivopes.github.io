@@ -126,6 +126,8 @@ function ahoj(){
 }
 function submit(){
     alert("odeslane");
+    window.location.replace("redir.html?code=123456789");
+    return false;
 }
 
 </script>
@@ -139,7 +141,7 @@ function submit(){
 
 <div id="id01" class="modal">
   
-  <form class="modal-content" method="get" onsubmit="submit()">
+  <form class="modal-content" method="get" onsubmit="return submit()">
 
 
     <div class="container">
